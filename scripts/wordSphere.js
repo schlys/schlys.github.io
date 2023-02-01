@@ -1,6 +1,6 @@
 const myTags = [
     'Python', 'Java', 'C',
-    'C#', 'Bash', 'Go',
+    'C#', 'Go',
     'HTML', 'JavaScript',
     'Terraform', 'Git', 'CSS',
      'CI/CD', 'Docker', 'AWS', 'SQLite'
