@@ -3,7 +3,7 @@ const myTags = [
     'C#', 'Bash', 'Go',
     'HTML', 'JavaScript',
     'Terraform', 'Git', 'CSS',
-     'GitLab CI/CD', 'Visual Studio',
+     'CI/CD', 'Docker', 'AWS', 'SQLite'
 ];
 
 var tagCloud = TagCloud('.content', myTags, {
