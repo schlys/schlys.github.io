@@ -1,9 +1,9 @@
 const myTags = [
     'Python', 'Java', 'C',
-    'C#', 'Go',
+    'C#', 'Go', 'GCP',
     'HTML', 'JavaScript',
     'Terraform', 'Git', 'CSS',
-     'CI/CD', 'Docker', 'AWS', 'SQL', 'MongoDB'
+     'CI/CD', 'Docker', 'AWS', 'SQL', 'MongoDB', 'Flask'
 ];
 
 var tagCloud = TagCloud('.content', myTags, {
