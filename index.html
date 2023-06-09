@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dongle&family=Overpass+Mono&family=Patua+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" href="/dist/output.css">
     <title>Sam Chlystek</title>
@@ -11,16 +14,16 @@
 <body class="bg-gray-800 text-white">
 
     <!-- Nav Bar  -->
-   <nav class="fixed top-0 z-10 w-full bg-gray-900">
+   <nav class="fixed top-0 z-10 w-full bg-gray-900 shadow-lg">
         <div class="mx-auto">
-            <div class="mx-5 py-2 flex items-center justify-between">
-                <a href="index.html" class="p-2 text-xl hover:tracking-wider transition-all duration-300">Sam Chlystek</a>
+            <div class="mx-5 py-4 flex items-center justify-between">
+                <a href="index.html" class="p-2 text-xl font-bold tracking-wide hover:tracking-widest transition-all duration-300">Sam Chlystek</a>
 
                 <!-- for non mobile -->
                 <div class="hidden md:flex space-x-8">
-                    <a href="#About" class="rounded-md p-2 hover:bg-red-400 hover:text-white">About</a>
-                    <a href="#Projects" class="rounded-md p-2 hover:bg-red-400 hover:text-white">Projects</a>
-                    <a href="#Contact" class="rounded-md p-2 hover:bg-red-400 hover:text-white">Contact</a>
+                    <a href="#About" class="text-lg rounded-md p-2 hover:bg-pink-800 hover:text-white">about</a>
+                    <a href="#Projects" class="text-lg rounded-md p-2 hover:bg-pink-800 hover:text-white">projects</a>
+                    <a href="#Contact" class="text-lg rounded-md p-2 hover:bg-pink-800 hover:text-white">contact</a>
                 </div>
 
                 <!-- for mobile -->
@@ -42,24 +45,42 @@
         </div>
    </nav>
 
-   <section>
-        <div class="mx-5 mt-28 -mb-32">
-                <div class="flex">
-                        <div class="ml-8 w-1/2">
-                            Hello & Welcome.<br>
-                            My name is Sam Chlystek.
-                        </div>
-                        <div id='cloud' class="w-1/2 z-0">   
-                            <!-- <div class="content"></div> -->
-                        </div>
-                </div>
+   
+    <div class="mx-5 mt-28 -mb-32 flex">     
+        <div class="w-full ml-3 md:ml-12 mt-10 min-[1000px]:w-1/2">
+            <h1 class="text-xl" style="font-family: 'Overpass Mono';">
+                Hello & Welcome.<br>
+                My name is Sam Chlystek.
+            </h1>
+            <p class="text-5xl my-20">
+                <span id='change' class="py-4 write inline-block overflow-hidden whitespace-nowrap relative">I am an Engineer.</span>
+                <script>
+                    text = ['I am an Engineer.', 
+                        'I am a Creator.',
+                        'I am a Designer.'];
+                    node = document.getElementById('change');
+                    count = 1;
+
+                    function update() {
+                        node.innerHTML = text[count];
+                        count++;
+                        if (count >= text.length) count = 0;
+                    }
+                    setInterval(update, 7000);
+                </script>
+            </p>
+            <p class="mt-8">
+                PAGE UNDER CONSTRUCTION
+            </p>
         </div>
-   </section>
+        <div id='cloud' class="w-0 min-[1000px]:w-1/2 z-0"></div>
+    </div>
+   
 
    <div class="aspect-[960/300] bg-[url('/downloads/wave1.svg')] w-full bg-no-repeat bg-center bg-cover"></div>
 
     <section class='z-10 -mb-1' style="background-color: #cd8967">
-        <div class="container home-container">
+        <div id="Projects">
             
             
             <!-- <p class="display-1 body-text" style="color: black;">
@@ -84,11 +105,11 @@
 
     <div class="border-0 rotate-180 aspect-[960/300] bg-[url('/downloads/wave1.svg')] w-full bg-no-repeat bg-center bg-cover"></div>
 
-    <section>
-        <footer class="p-4">
-            Copyright © 2023 Sam Chlystek
-        </footer>
-    </section>
+    
+    <footer class="p-4">
+        Copyright © 2023 Sam Chlystek
+    </footer>
+    
 
 </body>
 <script src="https://cdn.jsdelivr.net/npm/TagCloud@2.2.0/dist/TagCloud.min.js"></script>

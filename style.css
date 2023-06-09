@@ -62,21 +62,6 @@ hr {
     text-align: center;
     font-size: 40px;
 }
-/*word sphere*/
-.tagcloud {
-    text-align: center;
-    font-family: monospace;
-    font-size: 17px;
-    width: 50%;
-    margin: auto;
-}
-.tagcloud--item {
-    transition: .25s;
-}
-.tagcloud--item:hover{
-    cursor: pointer;
-    color: tomato;
-}
 
 /* PROJECTS PAGE--------------------------------------*/
 .accordion-item {
@@ -95,6 +80,23 @@ hr {
     font-size: 20px;
 }
 
+
+/*word sphere*/
+.tagcloud {
+    text-align: center;
+    font-family: 'Overpass Mono';
+    font-size: 17px;
+    width: 50%;
+    margin: auto;
+}
+.tagcloud--item {
+    transition: .25s;
+}
+.tagcloud--item:hover{
+    cursor: pointer;
+    color: rgb(228, 181, 82);
+}
+
 @media only screen and (max-width: 1300px) {
     :root {
         --cloud-radius: 190;
@@ -106,3 +108,48 @@ hr {
         visibility: hidden;
     }
 }
+
+
+@keyframes typewrite {
+    0%, 100% {
+        width: 0;
+    } 
+    10% {
+        width: 0;
+    }
+    30%, 80% {
+        width: 8.5em;
+    }
+}
+
+@keyframes cursor {
+    0%, 100% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+}
+
+.write {
+    font-family: 'Patua One';
+    animation-name: typewrite;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps(25,end);
+}
+
+.write::after {
+    content: "|";
+    position: absolute;
+    right: 0;
+    animation: cursor infinite;
+    animation-duration: 1s;
+    animation-timing-function: steps(1, end);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    * {
+      scroll-behavior: smooth;
+    }
+  }
