@@ -687,6 +687,10 @@ video {
   overflow: hidden;
 }
 
+.overflow-x-hidden {
+  overflow-x: hidden;
+}
+
 .whitespace-nowrap {
   white-space: nowrap;
 }
@@ -804,12 +808,6 @@ video {
 .hover\:text-white:hover {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-@media not all and (min-width: 640px) {
-  .max-sm\:overflow-x-hidden {
-    overflow-x: hidden;
-  }
 }
 
 @media (min-width: 768px) {
