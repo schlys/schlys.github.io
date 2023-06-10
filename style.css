@@ -2,66 +2,8 @@
     --cloud-radius: 220;
 }
 
-hr {
-    margin-bottom: 50px;
-    border: 1px;
-}
-.body-text {
-    color: lightslategray;
-    font-size: 30px;
-    line-height: 1.5;
-}
-/*for links*/
-.link{
-    text-decoration: none;
-    color: cornflowerblue;
-    font-weight: bold;
-}
-.link:hover{
-    text-decoration: underline;
-}
-
-.page-name {
-    font-size: 60px;
-}
-
-/* NAVBAR------------------------------- */
-.navbar {
-    background-color:steelblue;
-}
-.navbar-brand {
-    color: white;
-    font-size: 30px;
-    font-weight:600;
-    letter-spacing: 5px;
-    transition: .5s;
-}
-.navbar-brand:hover {
-    color:burlywood !important;
-}
-.nav-item {
-    margin-right: 40px;
-    font-size: large;
-}
-.nav-link {
-    color: antiquewhite !important;
-    letter-spacing: 5px !important;
-}
-.nav-link:hover {
-    color: gold !important;
-}
 
 
-/* HOME PAGE--------------------------------*/
-.home-container {
-    padding-left: 10%;
-    padding-right: 10%;
-    padding-top: 5%;
-}
-.skills {
-    text-align: center;
-    font-size: 40px;
-}
 
 /* PROJECTS PAGE--------------------------------------*/
 .accordion-item {
