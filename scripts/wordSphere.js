@@ -3,7 +3,9 @@ const myTags = [
     'C#', 'Go', 'GCP',
     'HTML', 'JavaScript',
     'Terraform', 'Git', 'CSS',
-     'CI/CD', 'Docker', 'AWS', 'SQL', 'MongoDB', 'Flask'
+     'CI/CD', 'Docker', 'AWS', 
+     'SQL', 'MongoDB', 'Flask',
+     'TailwindCSS'
 ];
 
 var tagCloud = TagCloud('#cloud', myTags, {
