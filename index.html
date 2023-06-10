@@ -20,7 +20,7 @@
                 <a href="index.html" class="p-2 text-xl font-bold tracking-wide hover:tracking-widest transition-all duration-300">Sam Chlystek</a>
 
                 <!-- for non mobile -->
-                <div class="hidden md:flex space-x-8">
+                <div class="md:flex hidden space-x-8">
                     <a href="#About" class="text-lg rounded-md p-2 hover:bg-pink-800 hover:text-white">about</a>
                     <a href="#Projects" class="text-lg rounded-md p-2 hover:bg-pink-800 hover:text-white">projects</a>
                     <a href="#Contact" class="text-lg rounded-md p-2 hover:bg-pink-800 hover:text-white">contact</a>
@@ -38,7 +38,7 @@
         </div>
 
         <!-- mobile menu here -->
-        <div id='mobile-menu' class="hidden mx-5 md:hidden">
+        <div id='mobile-menu' class="md:hidden hidden mx-5">
             <a href="#About" class="block text-sm p-2 hover:text-gray-400">About</a>
             <a href="#Projects" class="block text-sm p-2 hover:text-gray-400">Projects</a>
             <a href="#Contact" class="block text-sm p-2 hover:text-gray-400">Contact</a>
@@ -46,13 +46,13 @@
    </nav>
 
    
-    <div class="mx-5 mt-28 -mb-32 flex overflow-x-hidden">     
-        <div class="w-full ml-1 md:ml-12 mt-10 min-[1000px]:w-1/2">
-            <h1 class="text-xl" style="font-family: 'Overpass Mono';">
+    <div class="min-[1000px]:flex  max-[1000px]:-mb-16  mx-5 mt-28 -mb-44 overflow-x-hidden">     
+        <div class="min-[1000px]:w-1/2  md:ml-12  w-full ml-1  mt-10">
+            <h1 class="text-xl opm" >
                 Hello & Welcome.<br>
                 My name is Sam Chlystek.
             </h1>
-            <p class="text-5xl my-20">
+            <p class="text-5xl my-16">
                 <span id='change' class="py-4 write inline-block overflow-hidden whitespace-nowrap relative">I am an Engineer.</span>
                 <script>
                     text = ['I am an Engineer.', 
@@ -69,11 +69,22 @@
                     setInterval(update, 7000);
                 </script>
             </p>
-            <p class="mt-8">
-                PAGE UNDER CONSTRUCTION
+            <p class="opm">
+                I enjoy using code to solve complex problems and build innovative solutions.
             </p>
         </div>
-        <div id='cloud' class="w-0 min-[1000px]:w-1/2 z-0"></div>
+        <div class="min-[1000px]:hidden"><br></div>
+        <div class="md:max-[1000px]:ml-12  min-[1000px]:w-1/2  ml-1  z-0 mt-10">
+            <p class="min-[1000px]:text-center  text-xl opm">I have experience with:</p>
+            <p class="min-[1000px]:hidden  max-[1000px]:ml-9  opm">
+                > OOP: Java, C#<br>
+                > Other: Python, C, Go, MongoDB, SQL<br>
+                > Web Dev: HTML, CSS, JavaScript<br>
+                > DevOps: AWS, GCP, Docker, Terraform<br>
+                > IDEs: Visual Studio, Eclipse<br>
+            </p>
+            <div id='cloud' class="max-[1000px]:hidden"></div>
+        </div>
     </div>
    
 
