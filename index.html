@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Dongle&family=Overpass+Mono&family=Patua+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dongle&family=Overpass+Mono&family=Pathway+Extreme:wght@600&family=Patua+One&family=Poppins:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" href="/dist/output.css">
     <title>Sam Chlystek</title>
@@ -39,14 +39,13 @@
 
         <!-- mobile menu here -->
         <div id='mobile-menu' class="md:hidden hidden mx-5">
-            <a href="#About" class="block text-sm p-2 hover:text-gray-400">About</a>
-            <a href="#Projects" class="block text-sm p-2 hover:text-gray-400">Projects</a>
-            <a href="#Contact" class="block text-sm p-2 hover:text-gray-400">Contact</a>
+            <a href="#About" class="block text-sm p-2 hover:text-gray-400">about</a>
+            <a href="#Projects" class="block text-sm p-2 hover:text-gray-400">projects</a>
+            <a href="#Contact" class="block text-sm p-2 hover:text-gray-400">contact</a>
         </div>
    </nav>
 
-    
-    <div class="min-[880px]:flex  max-[1050px]:-mb-16  max-sm:-mb-2  mx-5 mt-28 -mb-44 overflow-x-hidden"> 
+    <div class="min-[880px]:flex  max-[880px]:mb-[-3%]  mb-[-10%]  mx-5 mt-28 overflow-x-hidden"> 
         
         <div class="min-[880px]:w-1/2  min-[1050px]:ml-12  w-full ml-2  mt-10">
             <h1 class="text-xl opm" >
@@ -92,14 +91,27 @@
    
 
     <!-- waves effect -->
-    <div class="aspect-[960/300] bg-[url('/downloads/wave1.svg')] w-full bg-no-repeat bg-center bg-cover"></div>
+    <div class="relative flex justify-center">
+        <a href="#Projects" class="absolute bottom-[54%] underline font-semibold tracking-wider text-lg">my work ↆ</a>
+        <div class="aspect-[960/300] bg-[url('/downloads/wave1.svg')] w-full bg-no-repeat bg-center bg-cover"></div>
+    </div>
+    
 
-    <section class='z-10 -mb-1' style="background-color: #cd8967">
-        <div id="Projects">
+    <section id="Projects">
+        <div style="background-color: #cd8967">
             
-            project section loading
+            <!-- project section loading
             <br>
-            check my <a class='underline' href="https://github.com/schlys">Github</a> for now
+            check my <a class='underline' href="https://github.com/schlys">Github</a> for now -->
+
+            <div class="flex flex-col mx-[20%] py-[5%]">
+                <div class="self-start bg-white text-black w-96 h-96 rounded-3xl p-6 mb-24">
+                    p1
+                </div>
+                <div class="self-end bg-white text-black w-96 h-96 rounded-3xl p-6">
+                    p2
+                </div>
+            </div>
             
            
         </div>
@@ -108,9 +120,31 @@
     <!-- waves effect -->
     <div class="border-0 rotate-180 aspect-[960/300] bg-[url('/downloads/wave1.svg')] w-full bg-no-repeat bg-center bg-cover"></div>
 
-    
-    <footer class="p-4">
-        Copyright © 2023 Sam Chlystek
+    <section id="Contact" class="mb-28">
+        <div class="flex justify-center flex-wrap">
+            <a href="mailto: samchlystek20@gmail.com" class="flex items-center px-7 py-2 hover:-translate-y-3 duration-300">
+                <img class="w-10 h-10 mr-3" src="downloads/email.png">
+                <span class="pop text-2xl">Email</span>
+            </a>
+            <a href="https://www.linkedin.com/in/sam-chlystek/" class="flex items-center px-7 py-2 hover:-translate-y-3 duration-300">
+                <img class="w-10 h-10 mr-3" src="downloads/linkedin.png">
+                <span class="pop text-2xl">Linkedin</span>
+            </a>
+            <a href="https://github.com/schlys" class="flex items-center px-7 py-2 hover:-translate-y-3 duration-300">
+                <img class="w-10 h-10 mr-3" src="downloads/github.png">
+                <span class="pop text-2xl">GitHub</span>
+            </a>
+            <a href="https://www.instagram.com/sam_chlystek/" class="flex items-center px-7 py-2 hover:-translate-y-3 duration-300">
+                <img class="w-10 h-10 mr-3" src="downloads/insta.png">
+                <span class="pop text-2xl">Instagram</span>
+            </a>
+        </div>
+    </section>
+
+
+    <footer class="max-sm:flex-col-reverse flex p-8 justify-between">
+        <p>Copyright © 2023 Sam Chlystek</p>
+        <a href="https://github.com/schlys/schlys.github.io/tree/main" class="underline">Website Code</a>
     </footer>
     
 
