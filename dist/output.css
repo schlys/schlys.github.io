@@ -612,6 +612,10 @@ video {
   margin-bottom: 4rem;
 }
 
+.mb-16 {
+  margin-bottom: 4rem;
+}
+
 .mb-24 {
   margin-bottom: 6rem;
 }
@@ -827,9 +831,22 @@ video {
   padding-bottom: 5%;
 }
 
+.text-center {
+  text-align: center;
+}
+
+.font-\[\'Patua_One\'\] {
+  font-family: 'Patua One';
+}
+
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
+}
+
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
 }
 
 .text-5xl {
